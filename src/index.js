@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import AllCards from './AllCards';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {robotsw} from "./robotsData";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div>
+    <AllCards robotsw={robotsw}></AllCards>
+    
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
